@@ -42,24 +42,15 @@ namespace SaintCoinach.Cmd {
             Console.WriteLine("Definition version: {0}", realm.DefinitionVersion);
             
             if (!realm.IsCurrentVersion) {
-                Console.Write("Update is available, perform update (Y/n)? ");
-                var updateQuery = Console.ReadLine();
-                if (string.IsNullOrEmpty(updateQuery) || string.Equals("y", updateQuery, StringComparison.OrdinalIgnoreCase)) {
-                    var stopWatch = new System.Diagnostics.Stopwatch();
-                    stopWatch.Start();
-                    realm.Update(true, new ConsoleProgressReporter());
-                    stopWatch.Stop();
-                    Console.WriteLine(stopWatch.Elapsed);
-                } else
-                    Console.WriteLine("Skipping update");
+                Console.Write("Current definitions do not match game version.");
             }
 
-            var cns = new Tharga.Toolkit.Console.Command.Base.ClientConsole();
+            var cns = new ClientConsole();
             var cmd = new RootCommand(cns);
 
             Setup(cmd, realm);
 
-            (new CommandEngine(cmd)).Run(args);
+            new CommandEngine(cmd).Run(args);
         }
 
         static void Setup(RootCommand rootCmd, ARealmReversed realm) {
