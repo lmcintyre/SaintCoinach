@@ -81,7 +81,6 @@
     <Compile Include="Ex\MultiSheet.Enumerator.cs" />
     <Compile Include="Ex\PartialDataSheet.Enumerator.cs" />
     <Compile Include="Ex\Relational\RelationalDataIndex.cs" />
-    <Compile Include="Ex\Relational\Update\ColumnComparer.cs" />
     <Compile Include="Ex\Relational\ValueConverters\QuadConverter.cs" />
     <Compile Include="Ex\Relational\ValueConverters\TomestoneOrItemReferenceConverter.cs" />
     <Compile Include="Ex\Relational\ValueConverters\ComplexLinkConverter.cs" />
@@ -139,7 +138,6 @@
     <Compile Include="Xiv\MinionRace.cs" />
     <Compile Include="Xiv\MinionSkillType.cs" />
     <Compile Include="Xiv\Quad.cs" />
-    <Compile Include="Ex\Relational\Update\UpdateProgress.cs" />
     <Compile Include="Ex\Relational\ValueConverters\GenericReferenceConverter.cs" />
     <Compile Include="Ex\Relational\ValueConverters\MultiReferenceConverter.cs" />
     <Compile Include="Graphics\Bone.cs" />
@@ -475,22 +473,6 @@
     <Compile Include="Ex\Relational\RelationalDataSheet.cs" />
     <Compile Include="Ex\DataRowBase.cs" />
     <Compile Include="Ex\DataSheet.cs" />
-    <Compile Include="Ex\Relational\Update\Changes\DefinitionMoved.cs" />
-    <Compile Include="Ex\Relational\Update\Changes\DefinitionRemoved.cs" />
-    <Compile Include="Ex\Relational\Update\Changes\FieldChanged.cs" />
-    <Compile Include="Ex\Relational\Update\Changes\RowAdded.cs" />
-    <Compile Include="Ex\Relational\Update\Changes\RowRemoved.cs" />
-    <Compile Include="Ex\Relational\Update\Changes\SheetLanguageAdded.cs" />
-    <Compile Include="Ex\Relational\Update\Changes\SheetLanguageRemoved.cs" />
-    <Compile Include="Ex\Relational\Update\Changes\SheetRemoved.cs" />
-    <Compile Include="Ex\Relational\Update\Changes\SheetTypeChanged.cs" />
-    <Compile Include="Ex\Relational\Update\ChangeType.cs" />
-    <Compile Include="Ex\Relational\Update\Comparer.cs" />
-    <Compile Include="Ex\Relational\Update\DefinitionUpdater.cs" />
-    <Compile Include="Ex\Relational\Update\IChange.cs" />
-    <Compile Include="Ex\Relational\Update\RelationUpdater.cs" />
-    <Compile Include="Ex\Relational\Update\SheetComparer.cs" />
-    <Compile Include="Ex\Relational\Update\SheetUpdater.cs" />
     <Compile Include="Ex\Relational\ValueConverters\ColorConverter.cs" />
     <Compile Include="Ex\Relational\ValueConverters\IconConverter.cs" />
     <Compile Include="Ex\Relational\ValueConverters\SheetLinkConverter.cs" />
@@ -620,7 +602,6 @@
     <Compile Include="Xiv\QuestRepeatInterval.cs" />
     <Compile Include="Range.cs" />
     <Compile Include="ARealmReversed.cs" />
-    <Compile Include="UpdateReport.cs" />
     <Compile Include="Xiv\Achievement.cs" />
     <Compile Include="Xiv\AchievementCategory.cs" />
     <Compile Include="Xiv\AchievementKind.cs" />

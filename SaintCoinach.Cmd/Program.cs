@@ -10,16 +10,6 @@ using Tharga.Toolkit.Console.Command;
 using Tharga.Toolkit.Console.Command.Base;
 
 namespace SaintCoinach.Cmd {
-    class ConsoleProgressReporter : IProgress<Ex.Relational.Update.UpdateProgress> {
-
-        #region IProgress<UpdateProgress> Members
-
-        public void Report(Ex.Relational.Update.UpdateProgress value) {
-            Console.WriteLine(value);
-        }
-
-        #endregion
-    }
     class Program {
         private static void Main(string[] args) {
             var dataPath = Properties.Settings.Default.DataPath;

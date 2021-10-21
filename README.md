@@ -27,8 +27,6 @@ A .NET library written in C# for extracting game assets and reading game assets 
 
 ### Set-up
 
-**Note:** When building an application using this library make sure to include a copy of [`SaintCoinach/SaintCoinach.History.zip`](/SaintCoinach/SaintCoinach.History.zip) in the application's directory. This should be done automatically if the project is included in the solution and referenced from there.
-
 All important data is exposed by the class `SaintCoinach.ARealmReversed`, so setting up access to it is fairly straightforward.
 
 The following is an example using the game's default installation path and English as default language:
@@ -38,16 +36,7 @@ const string GameDirectory = @"C:\Program Files (x86)\SquareEnix\FINAL FANTASY X
 var realm = new SaintCoinach.ARealmReversed(GameDirectory, SaintCoinach.Ex.Language.English);
 ```
 
-It's that simple. It is recommended, however, to check if the game has been updated since the last time, which is accomplished like this, in this example including the detection of data changes:
-
-```C#
-if (!realm.IsCurrentVersion) {
-    const bool IncludeDataChanges = true;
-    var updateReport = realm.Update(IncludeDataChanges);
-}
-```
-
-`ARealmReversed.Update()` can also take one additional parameter of type `IProgress<UpdateProgress>` to which progress is reported. The returned `UpdateReport` contains a list of changes that were detected during the update.
+It's that simple.
 
 ### Accessing data
 
