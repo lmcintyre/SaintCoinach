@@ -10,7 +10,6 @@ A .NET library written in C# for extracting game assets and reading game assets 
 * Parsing and reading from the game's data files (`*.exh` and `*.exd`).
 * Decoding of OGG files stored in the game's pack files (some of the `*.scd`).
 * OO-representation of the most important game data.
-* Self-updating of the mapping between game data and their OO-representation, in case things move around inside the game's files betwen patches.
 
 ### Partially implemented
 
