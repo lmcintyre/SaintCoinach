@@ -83,14 +83,6 @@
     {
       "index": 27,
       "name": "Invisibility"
-    },
-    {
-      "index": 27,
-      "name": "TargetType"
-    },
-    {
-      "index": 28,
-      "name": "Flags"
     }
   ]
 }
