@@ -34,7 +34,7 @@ namespace SaintCoinach.Cmd {
             Console.WriteLine("Definition version: {0}", realm.DefinitionVersion);
             
             if (!realm.IsCurrentVersion) {
-                Console.Write("Current definitions do not match game version.");
+                Console.WriteLine("Current definitions do not match game version.");
             }
 
             var cns = new ClientConsole();
