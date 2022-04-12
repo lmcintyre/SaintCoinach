@@ -3,9 +3,6 @@
   "defaultColumn": "Item{Result}",
   "definitions": [
     {
-      "name": "Number"
-    },
-    {
       "index": 1,
       "name": "CraftType",
       "converter": {
@@ -142,7 +139,7 @@
       "name": "IsExpert"
     },
     {
-      "index": 45,
+      "index": 47,
       "name": "PatchNumber"
     }
   ]
