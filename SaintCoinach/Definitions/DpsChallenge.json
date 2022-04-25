@@ -21,6 +21,10 @@
       }
     },
     {
+      "index": 5,
+      "name": "Order"
+    },
+    {
       "index": 6,
       "name": "Name"
     },

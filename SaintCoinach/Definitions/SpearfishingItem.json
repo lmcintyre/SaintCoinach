@@ -22,10 +22,6 @@
       }
     },
     {
-      "index": 4,
-      "name": "IsVisible"
-    },
-    {
       "index": 5,
       "name": "FishingRecordType",
       "converter": {
@@ -40,6 +36,10 @@
         "type": "link",
         "target": "TerritoryType"
       }
+    },
+    {
+      "index": 8,
+      "name": "IsVisible"
     }
   ]
 }

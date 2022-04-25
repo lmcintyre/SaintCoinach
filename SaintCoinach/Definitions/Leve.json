@@ -74,6 +74,14 @@
       }
     },
     {
+      "index": 16,
+      "name": "JournalGenre",
+      "converter": {
+        "type": "link",
+        "target": "JournalGenre"
+      }
+    },
+    {
       "index": 18,
       "name": "PlaceName{StartZone}",
       "converter": {
