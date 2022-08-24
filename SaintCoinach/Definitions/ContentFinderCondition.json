@@ -188,11 +188,11 @@
     },
     {
       "index": 51,
-      "name": "Level50/60/70Roulette"
+      "name": "LevelingRoulette"
     },
     {
       "index": 52,
-      "name": "LevelingRoulette"
+      "name": "HighLevelRoulette"
     },
     {
       "index": 53,
@@ -216,7 +216,7 @@
     },
     {
       "index": 58,
-      "name": "Level80Roulette"
+      "name": "LevelCapRoulette"
     },
     {
       "index": 59,

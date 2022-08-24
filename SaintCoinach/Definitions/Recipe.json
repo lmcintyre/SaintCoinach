@@ -79,6 +79,10 @@
       "name": "DurabilityFactor"
     },
     {
+      "index": 32,
+      "name": "RequiredQuality"
+    },
+    {
       "index": 33,
       "name": "RequiredCraftsmanship"
     },
