@@ -79,10 +79,6 @@
       "name": "DurabilityFactor"
     },
     {
-      "index": 32,
-      "name": "RequiredQuality"
-    },
-    {
       "index": 33,
       "name": "RequiredCraftsmanship"
     },
@@ -151,7 +147,7 @@
       "name": "IsExpert"
     },
     {
-      "index": 47,
+      "index": 48,
       "name": "PatchNumber"
     }
   ]
