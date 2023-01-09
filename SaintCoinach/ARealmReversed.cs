@@ -89,33 +89,14 @@ namespace SaintCoinach {
         /// </summary>
         /// <param name="gamePath">Directory path to the game installation.</param>
         /// <param name="language">Initial language to use.</param>
-        public ARealmReversed(string gamePath, Language language) : this(new DirectoryInfo(gamePath), new FileInfo("file"), language, null) { }
-
-        /// <summary>
-        ///     Initializes a new instance of the <see cref="ARealmReversed" /> class.
-        /// </summary>
-        /// <param name="gamePath">Directory path to the game installation.</param>
-        /// <param name="storePath">Path to the file used for storing definitions and history.</param>
-        /// <param name="language">Initial language to use.</param>
-        public ARealmReversed(string gamePath, string storePath, Language language) : this(new DirectoryInfo(gamePath), new FileInfo(storePath), language, null) { }
-
-        /// <summary>
-        ///     Initializes a new instance of the <see cref="ARealmReversed" /> class.
-        /// </summary>
-        /// <param name="gamePath">Directory path to the game installation.</param>
-        /// <param name="storePath">Path to the file used for storing definitions and history.</param>
-        /// <param name="language">Initial language to use.</param>
-        /// <param name="libraPath">Path to the Libra Eorzea database file.</param>
-        public ARealmReversed(string gamePath, string storePath, Language language, string libraPath) : this(new DirectoryInfo(gamePath), new FileInfo(storePath), language, new FileInfo(libraPath)) { }
-
+        public ARealmReversed(string gamePath, Language language) : this(new DirectoryInfo(gamePath), language) { }
+        
         /// <summary>
         ///     Initializes a new instance of the <see cref="ARealmReversed" /> class.
         /// </summary>
         /// <param name="gameDirectory">Directory of the game installation.</param>
-        /// <param name="storeFile">File used for storing definitions and history.</param>
         /// <param name="language">Initial language to use.</param>
-        /// <param name="libraFile">Location of the Libra Eorzea database file, or <c>null</c> if it should not be used.</param>
-        public ARealmReversed(DirectoryInfo gameDirectory, FileInfo storeFile, Language language, FileInfo libraFile) {
+        public ARealmReversed(DirectoryInfo gameDirectory, Language language) {
 
             // Fix for being referenced in a .Net Core 2.1+ application (https://stackoverflow.com/questions/50449314/ibm437-is-not-a-supported-encoding-name => https://stackoverflow.com/questions/44659499/epplus-error-reading-file)
             // PM> dotnet add package System.Text.Encoding.CodePages
@@ -123,7 +104,7 @@ namespace SaintCoinach {
 
             _GameDirectory = gameDirectory;
             _Packs = new PackCollection(Path.Combine(gameDirectory.FullName, "game", "sqpack"));
-            _GameData = new XivCollection(Packs, libraFile) {
+            _GameData = new XivCollection(Packs) {
                 ActiveLanguage = language
             };
 

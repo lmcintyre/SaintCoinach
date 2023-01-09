@@ -4,7 +4,7 @@ using System.Linq;
 using SaintCoinach.Ex.Relational;
 
 namespace SaintCoinach.Xiv {
-    public class BNpcName : XivRow, ILocatable, IItemSource, IQuantifiableXivString {
+    public class BNpcName : XivRow, IQuantifiableXivString {
 
         #region Fields
         private ILocation[] _Locations;
@@ -16,18 +16,7 @@ namespace SaintCoinach.Xiv {
 
         public Text.XivString Singular { get { return AsString("Singular"); } }
         public Text.XivString Plural { get { return Sheet.Collection.ActiveLanguage == Ex.Language.Japanese ? Singular : AsString("Plural"); } }
-
-        public IEnumerable<BNpc> BNpcs {
-            get {
-                if (!Sheet.Collection.IsLibraAvailable)
-                    return new BNpc[0];
-                return Sheet.Collection.BNpcs.Where(i => i.Name == this);
-            }
-        }
-        public IEnumerable<ILocation> Locations { get { return _Locations ?? (_Locations = BNpcs.SelectMany(i => i.Locations).ToArray()); } }
-        public IEnumerable<Item> Items { get { return _Items ?? (_Items = BNpcs.SelectMany(i => i.Items).ToArray()); } }
-        public IEnumerable<InstanceContent> InstanceContents { get { return _InstanceContents ?? (_InstanceContents = BNpcs.SelectMany(i => i.InstanceContents).ToArray()); } }
-
+        
         #endregion
 
         #region Constructors

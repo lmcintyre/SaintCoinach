@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using SaintCoinach.Ex.Relational;
 
 namespace SaintCoinach.Xiv {
-    public class TripleTriad : XivRow, ILocatable {
+    public class TripleTriad : XivRow {
         #region Fields
         private ENpc[] _ENpcs;
         private TripleTriadCard[] _FixedCards;
@@ -107,14 +107,6 @@ namespace SaintCoinach.Xiv {
 
             return new PrerequisiteQuestsRequirement(type, quests);
         }
-        #endregion
-
-        #region ILocatable Members
-
-        IEnumerable<ILocation> ILocatable.Locations {
-            get { return ENpcs.SelectMany(i => i.Locations); }
-        }
-
         #endregion
     }
 }

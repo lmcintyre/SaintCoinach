@@ -75,12 +75,6 @@ namespace SaintCoinach.Xiv {
         #region Build
         private ENpc[] BuildInvolvedENpcs() {
             var enpcs = new List<ENpc> { IssuingENpc };
-            if (Sheet.Collection.IsLibraAvailable) {
-                var enpcColl = Sheet.Collection.ENpcs;
-                var libraRows = Sheet.Collection.Libra.ENpcResident_Quest.Where(i => i.Quest_Key == this.Key);
-                foreach (var r in libraRows)
-                    enpcs.Add(enpcColl[(int)r.ENpcResident_Key]);
-            }
 
             enpcs.Add(TargetENpc);
 

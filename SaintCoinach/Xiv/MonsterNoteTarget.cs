@@ -34,9 +34,6 @@ namespace SaintCoinach.Xiv {
         #region Build
 
         private IEnumerable<ILocation> BuildLocations() {
-            if (Sheet.Collection.IsLibraAvailable)
-                return BNpcName.Locations;
-
             const int Count = 3;
 
             var locations = new List<ILocation>();

@@ -24,12 +24,7 @@ namespace SaintCoinach.Xiv {
         ///     Mapping of sheet names to the object types to use for them.
         /// </summary>
         private ConcurrentDictionary<string, Type> _SheetNameToTypeMap;
-
-        /// <summary>
-        ///     Collection of <see cref="BNpc"/> objects.
-        /// </summary>
-        private BNpcCollection _BNpcs;
-
+        
         /// <summary>
         ///     Collection of <see cref="ClassJobActionBase"/> (containing both <see cref="Action" /> and <see cref="CraftAction" />).
         /// </summary>
@@ -55,32 +50,9 @@ namespace SaintCoinach.Xiv {
         /// </summary>
         private ShopCollection _Shops;
 
-        /// <summary>
-        ///     Database connection to Libra Eorzea data.
-        /// </summary>
-        private Libra.Entities _Libra;
-
         #endregion
 
         #region Properties
-
-        /// <summary>
-        ///     Gets the collection of <see cref="BNpc"/> objects.
-        /// </summary>
-        /// <value>The collection of <see cref="BNpc"/> objects.</value>
-        /// <remarks>
-        /// This property is only supported when the Libra Eorzea database is present.
-        /// </remarks>
-        public BNpcCollection BNpcs {
-            get {
-                if (_BNpcs != null) return _BNpcs;
-                if (!IsLibraAvailable)
-                    throw new NotSupportedException("BNpcs are only available when Libra Eorzea database is present.");
-
-                _BNpcs = new BNpcCollection(this);
-                return _BNpcs;
-            }
-        }
 
         /// <summary>
         ///     Gets the collection of <see cref="ClassJobActionBase"/> (containing both <see cref="Action" /> and <see cref="CraftAction" />).
@@ -115,18 +87,6 @@ namespace SaintCoinach.Xiv {
         /// <value>The collection of all shops.</value>
         public ShopCollection Shops { get { return _Shops ?? (_Shops = new ShopCollection(this)); } }
 
-        /// <summary>
-        /// Gets a value indicating whether the Libra Eorzea database is available.
-        /// </summary>
-        /// <value>A value indicating whether the Libra Eorzea database is available.</value>
-        public bool IsLibraAvailable { get { return _Libra != null; } }
-
-        /// <summary>
-        /// Gets the connection to the Libra Eorzea database.
-        /// </summary>
-        /// <value>The connection to the Libra Eorzea database.</value>
-        public Libra.Entities Libra { get { return _Libra; } }
-
         #endregion
 
         #region Constructors
@@ -135,22 +95,7 @@ namespace SaintCoinach.Xiv {
         ///     Initializes a new instance of the <see cref="XivCollection" /> class.
         /// </summary>
         /// <param name="packCollection">The <see cref="PackCollection" /> to use to access game data.</param>
-        public XivCollection(PackCollection packCollection) : this(packCollection, null) { }
-
-        /// <summary>
-        ///     Initializes a new instance of the <see cref="XivCollection" /> class.
-        /// </summary>
-        /// <param name="packCollection">The <see cref="PackCollection" /> to use to access game data.</param>
-        /// <param name="libraDatabase"><see cref="FileInfo"/> of the Libra Eorzea database file, or <c>null</c> if Libra data should be disabled.</param>
-        public XivCollection(PackCollection packCollection, System.IO.FileInfo libraDatabase)
-            : base(packCollection) {
-
-            if (libraDatabase != null && libraDatabase.Exists) {
-                const string LibraConnectionStringFormat = @"metadata=res://*/Libra.LibraModel.csdl|res://*/Libra.LibraModel.ssdl|res://*/Libra.LibraModel.msl;provider=System.Data.SQLite.EF6;provider connection string='data source=""{0}""'";
-                var connStr = string.Format(LibraConnectionStringFormat, libraDatabase.FullName);
-                _Libra = new Libra.Entities(connStr);
-            }
-        }
+        public XivCollection(PackCollection packCollection) : base(packCollection) { }
 
         #endregion
 

@@ -11,11 +11,7 @@ namespace SaintCoinach.Xiv {
     /// <summary>
     /// Class representing a duty.
     /// </summary>
-    public class InstanceContent : ContentBase, IItemSource {
-        #region Fields
-        private InstanceContentData _Data;
-        #endregion
-
+    public class InstanceContent : ContentBase {
         #region Properties
 
         /// <summary>
@@ -95,8 +91,6 @@ namespace SaintCoinach.Xiv {
             }
         }
 
-        public InstanceContentData Data { get { return _Data ?? (_Data = new InstanceContentData(this)); } }
-
         public BNpcBase Boss { get { return As<BNpcBase>("BNpcBase{Boss}"); } }
 
         #endregion
@@ -109,41 +103,6 @@ namespace SaintCoinach.Xiv {
         /// <param name="sheet"><see cref="IXivSheet"/> containing this object.</param>
         /// <param name="sourceRow"><see cref="IRelationalRow"/> to read data from.</param>
         public InstanceContent(IXivSheet sheet, IRelationalRow sourceRow) : base(sheet, sourceRow) { }
-
-        #endregion
-
-        #region IItemSource Members
-
-        private Item[] _ItemSourceItems;
-
-        IEnumerable<Item> IItemSource.Items {
-            get {
-                if (_ItemSourceItems != null)
-                    return _ItemSourceItems;
-
-                var items = new List<Item>();
-
-                if (FixedRewards != null) {
-                    foreach (var item in FixedRewards) items.Add(item.Item);
-                }
-
-                if (Data.MidBosses != null) {
-                    foreach (var boss in Data.MidBosses) {
-                        if (boss.RewardItems != null)
-                            foreach (var item in boss.RewardItems) items.Add(item.Item);
-                    }
-                }
-                if (Data.Boss != null && Data.Boss.RewardItems != null) {
-                    foreach (var item in Data.Boss.RewardItems) items.Add(item.Item);
-                }
-                if (Data.MapTreasures != null) {
-                    foreach (var coffer in Data.MapTreasures)
-                        foreach (var item in coffer.Items) items.Add(item);
-                }
-
-                return _ItemSourceItems = items.ToArray();
-            }
-        }
 
         #endregion
     }

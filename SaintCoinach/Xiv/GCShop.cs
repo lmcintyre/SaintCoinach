@@ -8,7 +8,7 @@ namespace SaintCoinach.Xiv {
     /// <summary>
     ///     Class representing a Grand Company shop from the game data.
     /// </summary>
-    public class GCShop : XivRow, IShop, ILocatable, IItemSource {
+    public class GCShop : XivRow, IShop, IItemSource {
         #region Fields
 
         /// <summary>
@@ -36,12 +36,6 @@ namespace SaintCoinach.Xiv {
         /// </summary>
         /// <value>The items offered by the current <see cref="GCShop" />.</value>
         public IEnumerable<GCScripShopItem> Items { get { return _Items ?? (_Items = BuildItems()); } }
-
-        /// <summary>
-        /// Gets the locations of the current object.
-        /// </summary>
-        /// <value>The locations of the current object.</value>
-        public IEnumerable<ILocation> Locations { get { return ENpcs.SelectMany(_ => _.Locations); } }
 
         #endregion
 

@@ -203,209 +203,6 @@
     <Compile Include="IO\IndexSource.Enumerator.cs" />
     <Compile Include="IO\IPackSource.cs" />
     <Compile Include="IO\PackIdentifier.cs" />
-    <Compile Include="Libra\Achievement.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\AchievementCategory.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\AchievementKind.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Action.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\BaseParam.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\BeastTribe.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\BNpcName.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\BNpcName.Parse.cs" />
-    <Compile Include="Libra\BNpcName_PlaceName.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\ClassJob.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\ClassJobCategory.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\ClassJob_ClassJobCategory.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Colosseum.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\ContentRoulette.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\ContentType.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\CraftType.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Emote.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\ENpcResident.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\ENpcResident.Parse.cs" />
-    <Compile Include="Libra\ENpcResident_PlaceName.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\ENpcResident_Quest.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Entities.cs" />
-    <Compile Include="Libra\FCHierarchy.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\FCRank.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\FCReputation.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Frontline01.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Gathering.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\GatheringType.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\GCRankGridaniaFemaleText.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\GCRankGridaniaMaleText.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\GCRankLimsaFemaleText.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\GCRankLimsaMaleText.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\GCRankUldahFemaleText.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\GCRankUldahMaleText.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\GeneralAction.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\GrandCompany.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\GuardianDeity.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\GuildOrder.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\InstanceContent.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\InstanceContentType.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Item.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Item.Parse.cs" />
-    <Compile Include="Libra\ItemCategory.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\ItemSery.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\ItemSpecialBonu.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\ItemUICategory.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\ItemUIKind.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Item_ClassJob.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\JournalCategory.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\JournalGenre.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\JsonReaderExtensions.cs" />
-    <Compile Include="Libra\LibraModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LibraModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\LibraModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\LibraModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LibraModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\LodestoneSystemDefine.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\NotebookDivision.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\PlaceName.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Quest.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\QuestWebEx.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\QuestWebType.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Quest_ClassJob.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Race.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Recipe.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\RecipeElement.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Shop.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Status.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Title.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Tomestone.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Libra\Town.cs">
-      <DependentUpon>LibraModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="OrderedBitConverter.cs" />
     <Compile Include="Ex\Column.cs" />
     <Compile Include="Ex\DataReader.cs" />
@@ -593,16 +390,13 @@
     <Compile Include="Xiv\BeastReputationRank.cs" />
     <Compile Include="Xiv\BeastTribe.cs" />
     <Compile Include="Xiv\BGM.cs" />
-    <Compile Include="Xiv\BNpc.cs" />
     <Compile Include="Xiv\BNpcBase.cs" />
-    <Compile Include="Xiv\BNpcData.cs" />
     <Compile Include="Xiv\BNpcLocation.cs" />
     <Compile Include="Xiv\BNpcName.cs" />
     <Compile Include="Xiv\BuddyAction.cs" />
     <Compile Include="Xiv\BuddyEquip.cs" />
     <Compile Include="Xiv\ClassJob.cs" />
     <Compile Include="Xiv\ClassJobCategory.cs" />
-    <Compile Include="Xiv\Collections\BNpcCollection.cs" />
     <Compile Include="Xiv\Collections\ENpcCollection.cs" />
     <Compile Include="Xiv\Collections\EquipSlotCollection.cs" />
     <Compile Include="Xiv\ContentType.cs" />
@@ -648,9 +442,6 @@
     <Compile Include="Xiv\ILocatable.cs" />
     <Compile Include="Xiv\ILocation.cs" />
     <Compile Include="Xiv\InstanceContent.cs" />
-    <Compile Include="Xiv\InstanceContentData.cs" />
-    <Compile Include="Xiv\InstanceContentData.Fight.cs" />
-    <Compile Include="Xiv\InstanceContentData.RewardItem.cs" />
     <Compile Include="Xiv\Item.cs" />
     <Compile Include="Xiv\IParameterObject.cs" />
     <Compile Include="Xiv\IShop.cs" />
@@ -811,10 +602,6 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
-    <EntityDeploy Include="Libra\LibraModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>LibraModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <Content Include="Definitions\*.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -846,20 +633,6 @@
     <Content Include="Definitions\Snipe.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Libra\LibraModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>LibraModel.edmx</DependentUpon>
-      <LastGenOutput>LibraModel.Context.cs</LastGenOutput>
-    </None>
-    <None Include="Libra\LibraModel.edmx.diagram">
-      <DependentUpon>LibraModel.edmx</DependentUpon>
-    </None>
-    <None Include="Libra\LibraModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>LibraModel.edmx</DependentUpon>
-      <LastGenOutput>LibraModel.cs</LastGenOutput>
-    </None>
-    <Compile Include="Xiv\InstanceContentData.Treasure.cs" />
     <Compile Include="Xiv\QuestRequirements.ClassJobRequirement.cs" />
     <Compile Include="Xiv\PrerequisiteQuestsRequirementType.cs" />
     <Compile Include="Xiv\QuestRequirements.PreviousQuestRequirement.cs" />

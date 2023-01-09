@@ -297,10 +297,6 @@ namespace SaintCoinach.Xiv {
         private IItemSource[] BuildSources() {
             var sources = new List<IItemSource>();
 
-            Libra.Item libraRow = null;
-            if (Sheet.Collection.IsLibraAvailable)
-                libraRow = Sheet.Collection.Libra.Items.FirstOrDefault(i => i.Key == this.Key);
-
             var recipes = Sheet.Collection.GetSheet<Recipe>();
             var quests = Sheet.Collection.GetSheet<Quest>();
             var achievements = Sheet.Collection.GetSheet<Achievement>();
@@ -309,27 +305,11 @@ namespace SaintCoinach.Xiv {
             var fishingSpots = Sheet.Collection.GetSheet<FishingSpot>();
             var retainerTasks = Sheet.Collection.GetSheet<RetainerTask>();
             var companyCraft = Sheet.Collection.GetSheet<CompanyCraftSequence>();
-
-            if (libraRow != null) {
-                var bnpcColl = Sheet.Collection.BNpcs;
-                var instanceContents = Sheet.Collection.GetSheet<InstanceContent>();
-
-                foreach (var bnpc in libraRow.BNpcs)
-                    sources.Add(bnpcColl[bnpc]);
-                foreach (var ic in libraRow.InstanceContents)
-                    sources.Add(instanceContents[ic]);
-            }
-
-            /*sources.AddRange(bnpcColl.Where(i => i.Items.Contains(this)));
-            sources.AddRange(instanceContents.Cast<IItemSource>().Where(i => i.Items.Contains(this)));*/
-
-            // Not using Libra for these because it has a higher likelyhood of being incomplete.
+            
             sources.AddRange(recipes.Where(i => i.ResultItem == this));
             sources.AddRange(quests.Cast<IItemSource>().Where(i => i.Items.Contains(this)));
             sources.AddRange(achievements.Where(i => i.Item == this));
             sources.AddRange(shops.Where(i => i.Items.Contains(this)));
-
-            // Not using Libra for this because it doesn't even have information about it
             sources.AddRange(leves.Where(i => i.Items.Contains(this)));
             sources.AddRange(fishingSpots.Where(i => i.Items.Contains(this)));
             sources.AddRange(retainerTasks.Where(i => i.Items.Contains(this)));
