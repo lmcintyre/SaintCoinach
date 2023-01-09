@@ -608,31 +608,6 @@
     <Content Include="Definitions\game.ver">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Definitions\GcArmyEquipPreset.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Definitions\QuestAcceptAdditionCondition.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Definitions\QuestEffectDefine.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Definitions\QuestEffect.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <None Include="Definitions\RetainerFortuneRewardRange.json" />
-    <Content Include="Definitions\StanceChange.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Definitions\TextCommandParam.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Definitions\RideShootingTargetType.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Definitions\Snipe.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Compile Include="Xiv\QuestRequirements.ClassJobRequirement.cs" />
     <Compile Include="Xiv\PrerequisiteQuestsRequirementType.cs" />
     <Compile Include="Xiv\QuestRequirements.PreviousQuestRequirement.cs" />
