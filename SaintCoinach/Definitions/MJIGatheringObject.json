@@ -1,6 +1,6 @@
 {
   "sheet": "MJIGatheringObject",
-  "defaultColumn": "Singular",
+  "defaultColumn": "Name",
   "definitions": [
     {
       "name": "SGB",
@@ -15,10 +15,6 @@
       "converter": {
         "type": "icon"
       }
-    },
-    {
-      "index": 2,
-      "name": "Plural"
     },
     {
       "index": 3,
