@@ -616,7 +616,7 @@
       }
     },
     {
-      "index": 1498,
+      "index": 1499,
       "name": "Emote{Reward}",
       "converter": {
         "type": "link",
@@ -624,7 +624,7 @@
       }
     },
     {
-      "index": 1499,
+      "index": 1500,
       "name": "Action{Reward}",
       "converter": {
         "type": "link",
@@ -703,6 +703,14 @@
       "converter": {
         "type": "link",
         "target": "PlaceName"
+      }
+    },
+    {
+      "index": 1513,
+      "name": "JournalGenre",
+      "converter": {
+        "type": "link",
+        "target": "JournalGenre"
       }
     },
     {

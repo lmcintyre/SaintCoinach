@@ -105,6 +105,10 @@
       }
     },
     {
+      "index": 31,
+      "name": "UIPriority"
+    },
+    {
       "index": 32,
       "name": "RadiusRate"
     },

@@ -8,6 +8,14 @@
         "type": "link",
         "target": "MJIItemPouch"
       }
+    },
+    {
+      "index": 2,
+      "name": "Area",
+      "converter": {
+        "type": "link",
+        "target": "MJIText"
+      }
     }
   ]
 }

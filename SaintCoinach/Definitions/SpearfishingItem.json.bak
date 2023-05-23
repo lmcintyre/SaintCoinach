@@ -1,19 +1,16 @@
 {
-  "sheet": "FishParameter",
+  "sheet": "SpearfishingItem",
   "defaultColumn": "Item",
   "definitions": [
     {
-      "name": "Text"
+      "name": "Description"
     },
     {
       "index": 1,
       "name": "Item",
       "converter": {
-        "type": "multiref",
-        "targets": [
-          "EventItem",
-          "Item"
-        ]
+        "type": "link",
+        "target": "Item"
       }
     },
     {
@@ -25,15 +22,6 @@
       }
     },
     {
-      "index": 3,
-      "name": "OceanStars"
-    },
-
-    {
-      "index": 4,
-      "name": "IsHidden"
-    },
-    {
       "index": 5,
       "name": "FishingRecordType",
       "converter": {
@@ -43,27 +31,15 @@
     },
     {
       "index": 6,
-      "name": "FishingSpot",
+      "name": "TerritoryType",
       "converter": {
         "type": "link",
-        "target": "FishingSpot"
+        "target": "TerritoryType"
       }
-    },
-    {
-      "index": 7,
-      "name": "GatheringSubCategory",
-      "converter": {
-        "type": "link",
-        "target": "GatheringSubCategory"
-      }
-    },
-    {
-      "index": 8,
-      "name": "IsInLog"
     },
     {
       "index": 9,
-      "name": "AchievementCredit"
+      "name": "IsVisible"
     }
   ]
 }
