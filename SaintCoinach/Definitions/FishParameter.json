@@ -29,7 +29,7 @@
       "name": "IsHidden"
     },
     {
-      "index": 6,
+      "index": 5,
       "name": "FishingRecordType",
       "converter": {
         "type": "link",
@@ -37,7 +37,7 @@
       }
     },
     {
-      "index": 8,
+      "index": 6,
       "name": "FishingSpot",
       "converter": {
         "type": "link",
@@ -45,7 +45,7 @@
       }
     },
     {
-      "index": 9,
+      "index": 7,
       "name": "GatheringSubCategory",
       "converter": {
         "type": "link",
@@ -53,16 +53,8 @@
       }
     },
     {
-      "index": 10,
+      "index": 8,
       "name": "IsInLog"
-    },
-    {
-      "index": 11,
-      "name": "TimeRestricted"
-    },
-    {
-      "index": 12,
-      "name": "WeatherRestricted"
     }
   ]
 }
